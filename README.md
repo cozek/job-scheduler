@@ -11,24 +11,35 @@ added to the job queue. If at any point of time, a new job arrives and also an e
 existing job will be added to the job queue. Perform the job scheduling and show the status of job
 scheduling after a certain time instant. Display each job with job_id, arrival_time, execution_time,
 start_time, finish_time, remaining_time, status (Completed or Not completed).
+**Note: The input format varies slightly in the program in my repository.**
+## Example: 
 
-Example: 
-Enter processor allotted time d: 5
-Enter the initial set of jobs at time = 0
-No. of jobs: 5
-&lt;Job_Id, Arrival_time, Execution_time&gt;
-JId1 0 18
-JId2 0 4
-JId3 0 7
-JId4 0 9
-JId5 0 6
-Any more jobs at later time: Yes
-No. of jobs: 1
-&lt;Job_Id, Arrival_time, Execution_time&gt;
-JId6 18 20
-Any more jobs at later time: No
+1. Enter processor allotted time d: 5
+2. Enter the initial set of jobs at time = 0
+3. No. of jobs: 5
+
+
+Job id  | Arrival Time  | Execution Time | 
+--------|-------------- |--------------- |
+Job1    | 0             | 18             |
+Job2    | 0             | 04             |
+Job3    | 0             | 07             |
+Job4    | 0             | 09             |
+Job5    | 0             | 06             |
+
+
+## Jobs that arrive later
+
+Job id  | Arrival Time  | Execution Time | 
+--------|-------------- |--------------- |
+Job6    | 20             | 18             |
+
+
+
 Enter the time instant for displaying the job scheduling result: 10
 
-Job Scheduling Status at time instant 10.
+
+### Job Scheduling Status at time instant 10.
 
 ![alt text](https://github.com/cozek/job-scheduler/raw/master/sample_output.JPG)
+
